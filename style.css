@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+body::before{
+    content: '';
+    background-color: rgb(0,0,0,.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+header .logo img{
+    width: 100px;
+}
+header{
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+.login{
+    z-index: 90;
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.75);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 450px;
+    height: 550px;
+    border-radius: 10px;
+    padding: 50px;
+}
+.login h2{
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.login .login-box form{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.login .login-box form .input-box input{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+.login .login-box form a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e50914;
+    border-radius: 5px;
+}
+
+.login .login-box .support{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+}
+.login .login-box .support .remember{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.login .login-box .support .help a{
+    text-decoration: none;
+    color: #333333;
+}
+.login .login-box .support .help a:hover{
+    text-decoration:underline;
+}
+.login .login-box .footer{
+    margin: 15px 0px;
+    color: #333333;
+    font-size: 15px;
+
+}
+.login .login-box .footer .login-face{
+    width: 100%;
+    color: #737373;
+}
+.login .login-box .footer .login-face img{
+    width: 18px;
+}
+.login .login-box .footer .login-face a{
+    text-decoration: none;
+    color: #333333;
+}
+.login .login-box .footer .login-face a:hover{ 
+    text-decoration:underline;
+}
+.login .login-box .footer .sign_up{
+    margin: 15px 0px;
+    display: flex;
+    color: #333333;
+}
+.login .login-box .footer .sign_up a{
+    text-decoration: none;
+    color: #fff;
+}
+.login .login-box .footer .sign_up a:hover{
+    text-decoration:underline;
+}
+.login .login-box .footer .terms {
+    font-size: 13px;
+}
+.login .login-box .footer .terms a{
+    font-size: 13px;
+    text-decoration: none;
+    color: blue;
+    
+}
+.login .login-box .footer .terms a:hover{
+    text-decoration:underline;
+}
